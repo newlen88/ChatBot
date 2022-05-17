@@ -15,6 +15,10 @@ export class ChatBotGateway
 {
   @WebSocketServer() server: Server;
 
+  verNuevo() {
+    console.log('llama al socket');
+  }
+
   afterInit(server: any) {
     console.log('Esto se ejecuta cuando inicia');
   }
